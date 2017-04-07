@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HrOpen Org Chart</title>
+        <link rel="stylesheet" href="demo.css"/>
+        <link rel="stylesheet" href="jquery.orgchart.css"/>
+        <style>
+        span.title {
+            font-weight: normal;
+            font-style: italic;
+            color: #404040;
+        }
+        
+        span.open {
+            color: #0099cc;
+        }
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="jquery.orgchart.js"></script>
+        <script>
+        $(function() {
+            $("#organisation").orgChart({container: $("#main")});
+        });
+        </script>
+    </head>
+
+    <body>
+        <div id="left">
+            <ul id="organisation" style="display: none;">
+                <li class="company">
+                    <em>
+                        <a href="hropen-v1.html">
+                        Skupština
+                        </a>
+                    </em>
+                    <ul>
+                        <li>
+                            Ekspertne skupine
+                            <ul>
+                                <li>
+                                    Programiraj za Hrvatsku
+                                    <ul>
+                                            <li>Miroslav Schlossberg, ing.<br><span class="title">voditelj ekspertne skupine</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Ekspertna skupina za GNU/Linux
+                                    <ul>
+                                            <li>Žarko Pintar<br><span class="title">voditelj ekspertne skupine</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Ekspertna skupina za otvorene obrazovne tehnologije i sadržaj
+                                    <ul>
+                                            <li>Ivana Bosnić<br><span class="title">voditelj ekspertne skupine</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Ekspertna skupina za programsko inženjerstvo u otvorenim sustavima
+                                    <ul>
+                                            <li>Siniša Tomić<br><span class="title">voditelj ekspertne skupine</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Ekspertna skupina KOHA
+                                    <ul>
+                                            <li>Dobrica Pavlinušić, dipl.inf.<br><span class="title">voditelj ekspertne skupine</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="main">
+            </div>
+        </div>
+    </body>
+
+</html>
