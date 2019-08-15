@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HrOpen Org Chart</title>
+        <link rel="stylesheet" href="demo.css"/>
+        <link rel="stylesheet" href="jquery.orgchart.css"/>
+        <style>
+        span.title {
+            font-weight: normal;
+            font-style: italic;
+            color: #404040;
+        }
+        
+        span.open {
+            color: #0099cc;
+        }
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="jquery.orgchart.js"></script>
+        <script>
+        $(function() {
+            $("#organisation").orgChart({container: $("#main")});
+        });
+        </script>
+    </head>
+
+    <body>
+        <div id="left">
+            <ul id="organisation" style="display: none;">
+                <li class="company">
+                    <em>
+                        Skupština (svi članovi)
+                    </em>
+                    <ul>
+                        <li>
+                                <a href="hropen-v1-uo.html">
+                                Upravni odbor (9)
+                                </a>
+                                    <ul>
+                                        <li>
+                                            <span class="title">predsjednik</span>
+                                            <ul>
+                                                <li>
+                                                    <span class="title">dopredsjednik</span>
+                                                </li>
+                                                <li>
+                                                    <span class="title">dopredsjednik</span>
+                                                </li>
+                                                <li>
+                                                    <span class="title">dopredsjednik</span>
+                                                </li>
+                                                <li>
+                                                    <span class="title">tajnica</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="hropen-v1.html">
+                                            Tijela udruge
+                                            </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="hropen-v1-es.html">
+                                                        Ekspertne skupine
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="hropen-v1-pp.html">
+                                                        Povjerenstvo za priznanja
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                        </li>
+                                    </ul>
+                        </li>
+                        <li>
+                            <a href="hropen-v1-no.html">
+                            Nadzorni odbor (7)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="hropen-v1-sc.html">
+                            Sud časti (3)
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="main">
+            </div>
+        </div>
+    </body>
+
+</html>
